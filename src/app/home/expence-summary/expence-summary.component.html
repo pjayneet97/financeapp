@@ -1,0 +1,28 @@
+<select (change)="changeCat($event)" [(ngModel)]="category">
+    <option [value]="cat.name" *ngFor="let cat of categories">{{cat.name}}</option>
+</select>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Expence Date</th>
+        <th>Amount</th>
+        <th>Category</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let expence of expences">
+        <td>{{expence.timestamp.toDate() | date}}</td>
+        <td>{{expence.amount}}</td>
+        <td>{{expence.category | uppercase}}</td>
+
+      </tr>
+      <tr>
+          <td></td>
+          <td>Total Expence : {{total}}</td>
+          <td></td>
+          <td></td>
+      </tr>
+    </tbody>
+  </table>
+

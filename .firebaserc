@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "financeapp-a0633": {
+      "hosting": {
+        "financeapp": [
+          "financeapp-a0633"
+        ]
+      }
+    }
+  }
+}

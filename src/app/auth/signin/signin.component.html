@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+        <input class="form-control" type="email" [(ngModel)]="email">
+        <br>
+        <input class="form-control" type="password" [(ngModel)]="password">
+        <br>
+        <button class="btn btn-primary" (click)="signIn()">Sign In</button>
+        <button class="btn btn-primary" routerLink="/auth/signup">Sign Up</button>
+        <br>
+    </div>
+    <div class="col-lg-4"></div>
+</div>

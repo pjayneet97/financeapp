@@ -1,0 +1,21 @@
+<button class="btn btn-primary" routerLink="/home/manage-expence/add-expence">Add Expence</button>
+<table class="table">
+    <thead>
+      <tr>
+        <th>Expence Date</th>
+        <th>Amount</th>
+        <th>Category</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let expence of expences">
+        <td>{{expence.timestamp.toDate() | date}}</td>
+        <td>{{expence.amount}}</td>
+        <td>{{expence.category | uppercase}}</td>
+        <td>
+            <button (click)="delete(expence.id)" class="btn btn-sm btn-danger">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
