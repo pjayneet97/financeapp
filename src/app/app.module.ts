@@ -26,6 +26,8 @@ import { environment } from '../environments/environment';
 import { EditCategoryComponent } from './home/manage-categories/edit-category/edit-category.component';
 import { AuthGuardService } from './services/auth-guard.service';
 import { TransformPipe } from './transform.pipe';
+import { PaymentComponent } from './payment/payment.component';
+import { CapPaymentComponent } from './cap-payment/cap-payment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +48,9 @@ import { TransformPipe } from './transform.pipe';
     FooterComponent,
     DashboardComponent,
     EditCategoryComponent,
-    TransformPipe
+    TransformPipe,
+    PaymentComponent,
+    CapPaymentComponent
   ],
   imports: [
     BrowserModule,

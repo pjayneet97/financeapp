@@ -1,0 +1,8 @@
+{
+  "appId": "com.splixcube.financeapp",
+  "appName": "financeapp",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

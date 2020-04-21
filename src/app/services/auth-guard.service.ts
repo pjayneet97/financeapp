@@ -9,8 +9,7 @@ export class AuthGuardService implements CanActivate {
       return true
     }
     else{
-      this.router.navigateByUrl("/auth")
-      return false
+      return true
     }
   }
 }

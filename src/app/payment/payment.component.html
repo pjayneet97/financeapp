@@ -1,0 +1,10 @@
+<div class="order-place">
+    <a (click)="proceedToPay($event)" class="btn btn-order">
+        <ng-container *ngIf="processingPayment">
+            <i class="fa fa-circle-o-notch fa-spin"></i> Processing
+        </ng-container>
+        <ng-container *ngIf="!processingPayment"> 
+          Proceed to Pay
+        </ng-container>
+     </a>
+  </div>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">financeapp</string>
+    <string name="title_activity_main">financeapp</string>
+    <string name="package_name">com.splixcube.financeapp</string>
+    <string name="custom_url_scheme">com.splixcube.financeapp</string>
+</resources>
